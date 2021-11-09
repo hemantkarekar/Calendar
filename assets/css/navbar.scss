@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$font-body: "Poppins", sans-serif;
+$font-brand: "Orbitron", sans-serif;
+$font-form: "Montserrat", sans-serif;
+
+@font-face {
+  font-family: poster-font;
+  src: url("assets/fonts/avgr65w.ttf");
+}
+
+/* COLORS */
+$black: #000000;
+$primary: #ff4040;
+$secondary: #45b7e7;
+$secondary-dark: #009fe4;
+$warning: #ffc340;
+header {
+    height: 60px;
+    width: 100vw;
+    background: $secondary;
+    & > nav {
+      height: 100%;
+      width: 100%;
+      & > .brand {
+        float: left;
+        margin-left: 50px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          height: 50px;
+          width: auto;
+        }
+      }
+      & > .nav-wrap {
+        float: right;
+        height: 100%;
+        ul {
+          height: 100%;
+          list-style: none;
+          li {
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 25px;
+            font-size: 20px;
+            a {
+              color: white;
+            }
+            &:hover {
+              background: $warning;
+              cursor: pointer;
+            }
+  
+            &:nth-of-type(1) {
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    background-color: white;
+    .foo-content {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      hr {
+        padding: 0;
+        margin: 0;
+      }
+      width: 100%;
+      .brand-partners {
+        display: flex;
+        float: left;
+        width: 40%;
+        justify-content: space-around;
+        padding: 10px 0;
+        .partner {
+          img {
+            padding: 5px 0;
+            margin-left: -20px;
+            height: 55px;
+          }
+        }
+      }
+    }
+    .copyright {
+      padding: 10px 20px;
+      float: right;
+      color: #626262;
+    }
+  }
+  @media (max-width: 600px) {
+    footer {
+      brand-partners {
+        img {
+          height: 40px;
+        }
+      }
+      .copyright {
+        font-size: 0.9rem;
+      }
+    }
+  }

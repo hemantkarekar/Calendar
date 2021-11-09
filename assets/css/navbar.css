@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: poster-font;
+  src: url("assets/fonts/avgr65w.ttf");
+}
+
+/* COLORS */
+header {
+  height: 60px;
+  width: 100vw;
+  background: #45b7e7;
+}
+
+header > nav {
+  height: 100%;
+  width: 100%;
+}
+
+header > nav > .brand {
+  float: left;
+  margin-left: 50px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header > nav > .brand img {
+  height: 50px;
+  width: auto;
+}
+
+header > nav > .nav-wrap {
+  float: right;
+  height: 100%;
+}
+
+header > nav > .nav-wrap ul {
+  height: 100%;
+  list-style: none;
+}
+
+header > nav > .nav-wrap ul li {
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 25px;
+  font-size: 20px;
+}
+
+header > nav > .nav-wrap ul li a {
+  color: white;
+}
+
+header > nav > .nav-wrap ul li:hover {
+  background: #ffc340;
+  cursor: pointer;
+}
+
+header > nav > .nav-wrap ul li:nth-of-type(1) {
+  width: auto;
+}
+
+footer {
+  width: 100%;
+  background-color: white;
+}
+
+footer .foo-content {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 80%;
+  width: 100%;
+}
+
+footer .foo-content hr {
+  padding: 0;
+  margin: 0;
+}
+
+footer .foo-content .brand-partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  width: 40%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 0;
+}
+
+footer .foo-content .brand-partners .partner img {
+  padding: 5px 0;
+  margin-left: -20px;
+  height: 55px;
+}
+
+footer .copyright {
+  padding: 10px 20px;
+  float: right;
+  color: #626262;
+}
+
+@media (max-width: 600px) {
+  footer brand-partners img {
+    height: 40px;
+  }
+  footer .copyright {
+    font-size: 0.9rem;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */
